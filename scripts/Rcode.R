@@ -39,7 +39,7 @@ merged_data <- merge(timeseries, lookuptable, by.x = c("Province/State",
 data_wide <- merged_data[,c(1,2,3,4,255:263,5:254)]
 
 # save wide data 
-saveRDS(data_wide, file = "./data/clean/data_wide.Rds")
+save(data_wide, file = "./data/clean/data_wide.RData")
 
 # change into long format
 
@@ -50,7 +50,7 @@ data_long <- data_2long %>%
   pivot_longer(13:262, names_to = "date", values_to = "cases")
 
 # save long data 
-saveRDS(data_long, file = "./data/clean/data_long.Rds")
+save(data_long, file = "./data/clean/data_long.RData")
 
 # CREATING GRAPHS
 library(ggplot2)
@@ -167,3 +167,4 @@ graph3b %>%
 
 ggsave("output/figures/ratelowpop.png")
 
+sessionInfo()
