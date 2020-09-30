@@ -11,11 +11,11 @@ Data used in this work has been obtained from the COVID-19 Data Repository by th
 
 ## Repository organisation
 
-data/clean : Clean data in long and wide format
-output/figures: Figures used in this report 
-scripts: R scripts used for data download, cleaning, and creation of figures
-mwf_assignment1.Rproject : The R project 
-README.md : all this important stuff
+- data/clean : Clean data in long and wide format
+- output/figures: Figures used in this report 
+- scripts: R scripts used for data download, cleaning, and creation of figures
+- mwf_assignment1.Rproject : The R project 
+- README.md : all this important stuff
 
 ## Main Findings
 
